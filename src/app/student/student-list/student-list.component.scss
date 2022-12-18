@@ -1,0 +1,37 @@
+.users-list{
+  margin: 0.5rem;
+.student-card {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  .field-container {
+    width: 30%;
+    margin: 0.5rem 0;
+    label {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  }
+}
+}
+
+@media screen and (max-width: 768px) {
+  .users-list{
+  .student-card {
+    display: flex;
+    flex-direction: column;
+    .field-container {
+      margin: 0.25rem 0;
+      width: 100%;
+      label {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+}

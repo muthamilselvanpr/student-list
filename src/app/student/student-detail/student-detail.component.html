@@ -1,0 +1,21 @@
+<section class="usertodo-section">
+  <h3>User {{userId}} Todo List</h3>
+  <ng-container *ngIf="userTodoList">
+    <table>
+      <thead>
+        <tr>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let userTodo of userTodoList" [ngClass]="userTodo.completed ? 'green-bg' : 'amber-bg'">
+        <td>{{userTodo.title}}</td>
+        <td>{{userTodo.completed ? 'Closed' : 'Open'}}</td>
+        <td><button (click)="flipStatus(userTodo)">{{userTodo.completed ? 'Open' : 'Close'}}</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</section>

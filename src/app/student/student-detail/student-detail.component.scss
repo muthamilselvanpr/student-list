@@ -1,0 +1,24 @@
+.usertodo-section {
+  margin: 0.5rem;
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+
+  .green-bg {
+    background-color: green;
+  }
+
+  .amber-bg {
+    background-color: yellow;
+  }
+}
+
+
+

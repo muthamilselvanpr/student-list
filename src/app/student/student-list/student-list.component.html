@@ -1,0 +1,19 @@
+<section class="users-list">
+  <h3>Users List</h3>
+  <ng-container *ngIf="studentList as studentList">
+  <div class="student-card" *ngFor="let student of studentList" (click)="navigateToStudenTodo(student)">
+    <div class="field-container">
+      <label>Name : </label>
+      <span>{{student.name}}</span>
+    </div>
+    <div class="field-container">
+      <label>Email : </label>
+      <span>{{student.email}}</span>
+    </div>
+    <div class="field-container">
+      <label>Phone Number : </label>
+      <span>{{student.phone}}</span>
+    </div>
+  </div>
+</ng-container>
+</section>
