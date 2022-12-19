@@ -1,37 +1,72 @@
-.users-list{
+.users-list {
   margin: 0.5rem;
-.student-card {
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  border-radius: 5px;
-  .field-container {
-    width: 30%;
-    margin: 0.5rem 0;
-    label {
-      font-weight: 600;
-      font-size: 1rem;
-      margin-right: 10px;
+  h3 {
+    margin-left: 0.5rem;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    .student-card {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+      width: 30%;
+      padding: 0.75rem;
+      margin: 0.5rem 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      cursor: pointer;
+      .field-container {
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: row;
+        label {
+          font-weight: 600;
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .users-list {
+    .card-container {
+      .student-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5rem 0.25rem;
+        .field-container {
+          margin: 0.25rem 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .users-list {
+    .card-container {
+      .student-card {
+        width: 45%;
+        margin: 0.5rem 0.25rem;
+        .field-container {
+          margin: 0.25rem 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-device-width: 1450px) {
+  .users-list {
+    .card-container {
+      .student-card {
+        width: 21%;
     }
   }
 }
 }
 
-@media screen and (max-width: 768px) {
-  .users-list{
-  .student-card {
-    display: flex;
-    flex-direction: column;
-    .field-container {
-      margin: 0.25rem 0;
-      width: 100%;
-      label {
-        font-weight: 600;
-        font-size: 1rem;
-      }
-    }
-  }
-}
-}

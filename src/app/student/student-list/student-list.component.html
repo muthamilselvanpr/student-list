@@ -1,7 +1,8 @@
 <section class="users-list">
   <h3>Users List</h3>
   <ng-container *ngIf="studentList as studentList">
-  <div class="student-card" *ngFor="let student of studentList" (click)="navigateToStudenTodo(student)">
+  <div class="card-container">
+  <div class="student-card" *ngFor="let student of studentList" (click)="navigateToStudenTodo(student)" [title]="'Click on card to check user todo list'">
     <div class="field-container">
       <label>Name : </label>
       <span>{{student.name}}</span>
@@ -14,6 +15,7 @@
       <label>Phone Number : </label>
       <span>{{student.phone}}</span>
     </div>
+  </div>
   </div>
 </ng-container>
 </section>

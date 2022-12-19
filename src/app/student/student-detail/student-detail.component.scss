@@ -9,6 +9,9 @@
       text-align: left;
       padding: 8px;
     }
+    td button {
+      cursor: pointer;
+    }
   }
 
   .green-bg {
@@ -17,6 +20,21 @@
 
   .amber-bg {
     background-color: yellow;
+  }
+
+  .button-container {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      padding: 0.5rem 1rem;
+      border: 1px solid rgb(80, 80, 167);
+      background-color: rgb(80, 80, 167);
+      border-radius: 5px;
+      color: #ffffff;
+      cursor: pointer;
+    }
   }
 }
 
